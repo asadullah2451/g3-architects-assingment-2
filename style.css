@@ -180,3 +180,26 @@ img {
   margin-top: 20px;
   display: inline-block;
 }
+
+/* Some Facts Section */
+.some-facts-items {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  justify-content: space-around;
+  margin: 100px 0;
+
+}
+.item {
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid var(--primary);
+  padding: 25px 0;
+}
+.item img {
+  width: 25%;
+}
+.item h3 {
+  font-weight: 600;
+  font-size: 45px;
+  color: var(--lightgray);
+}
