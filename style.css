@@ -1,0 +1,139 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+
+/* Common Style */
+:root {
+  --primary: #ff900e;
+  --lightgray: #727272;
+  --white: white;
+  --off-white: #fff4e7;
+  --black: black;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  width: 1350px;
+
+  border: 2px solid var(--primary);
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+  border: 2px solid #ddd;
+}
+.btn {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--white);
+  background: var(--primary);
+  padding: 20px 24px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+.primary-title {
+  font-size: 45px;
+  margin-bottom: 24px;
+}
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--lightgray);
+  line-height: 26px;
+
+}
+/* ---------------------
+    Header Style Start
+---------------------*/
+.main-header {
+  background-color: var(--off-white);
+}
+
+/* Navigation Bar */
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.company-name h2 {
+  font-weight: 700;
+  font-size: 45px;
+}
+.menu a {
+  text-decoration: none;
+  color: var(--black);
+  margin-left: 20px;
+}
+
+/* Banner Section */
+.banner-content {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  margin: 100px auto 40px auto;
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 30px;
+}
+.banner-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--lightgray);
+  margin-bottom: 30px;
+  line-height: 26px;
+}
+.banner-image {
+  margin-bottom: 30px;
+}
+
+/* ----------------------------------
+    Header End and Main Start
+---------------------------------- */
+
+/* Quick lins section */
+.quick-list {
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.quick-list-images {
+  width: 45%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.quick-list-images div {
+  box-shadow: 0px 0px 20px 0px #00000040;
+}
+.quick-list-content {
+  width: 50%;
+}
+.gray{
+    color: var(--lightgray);
+    font-weight: 400;
+}
+.primary-color{
+    color: var(--primary);
+}
+.quick-list-content p{
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
