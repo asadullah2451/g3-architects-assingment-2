@@ -245,6 +245,12 @@ img {
   border-radius: 5px;
   border: 2px solid var(--primary);
   padding: 25px 0;
+  cursor: pointer;
+  transition: .5s;
+}
+.item:hover{
+  background-color: var(--primary);
+  color: var(--off-white);
 }
 .item img {
   width: 25%;
@@ -253,6 +259,9 @@ img {
   font-weight: 600;
   font-size: 45px;
   color: var(--lightgray);
+}
+.item:hover h3{
+  color: var(--off-white);
 }
 
 /* Sponsors Section */
@@ -283,4 +292,31 @@ img {
   text-align: center;
   font-weight: 400;
   font-size: 20px;
+}
+
+/*------------------------------------
+         Responsive style 
+------------------------------------*/
+/* Mobile Device */
+@media only screen and (max-width: 577px) {
+  .navigation-bar{
+    flex-direction: column;
+    row-gap: 5rem;
+  }
+  .menu a{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--primary);
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 2px solid var(--primary);
+  }
+  .banner-title {
+    font-size: 80px;
+  }
+  .banner-description {
+    font-size: 30px;
+    line-height: 50px;
+    text-align: justify;
+  }
 }
