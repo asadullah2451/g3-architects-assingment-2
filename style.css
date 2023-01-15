@@ -16,8 +16,6 @@
 body {
   font-family: "Work Sans", sans-serif;
   width: 1350px;
-
-  border: 2px solid var(--primary);
   margin: 0 auto;
 }
 img {
@@ -26,7 +24,6 @@ img {
 .container {
   width: 85%;
   margin: 0 auto;
-  border: 2px solid #ddd;
 }
 .btn {
   font-weight: 600;
@@ -66,7 +63,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 .company-name h2 {
   font-weight: 700;
@@ -181,13 +178,67 @@ img {
   display: inline-block;
 }
 
+/* Contact Section */
+.contact-container{
+  background-color: var(--primary);
+  border-radius: 10px;
+  padding: 50px;
+  margin-bottom: 100px;
+}
+.contact-container h2{
+  color: var(--white);
+  text-align: center;
+}
+.form-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-box-1{
+  width: 48%;
+  background-color: var(--white);
+  border-radius: 10px;
+  text-align: center;
+  padding: 9% 0;
+}
+.form-container input[type="text"]{
+  width: 80%;
+  height: 50px;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+.form-container input[type="email"]{
+  width: 80%;
+  height: 50px;
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+.form-container textarea{
+  width: 80%;
+  height: 50px;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+}
+.form-container input[type="submit"]{
+  width: 30%;
+}
+.form-container input[type="reset"]{
+  width: 30%;
+}
+
+.form-box-2{
+  width: 48%;
+  background-color: var(--white);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
 /* Some Facts Section */
 .some-facts-items {
   display: grid;
   grid-template-columns: repeat(4, 200px);
   justify-content: space-around;
-  margin: 100px 0;
-
+  margin: 70px 0 100px 0;
 }
 .item {
   text-align: center;
@@ -202,4 +253,34 @@ img {
   font-weight: 600;
   font-size: 45px;
   color: var(--lightgray);
+}
+
+/* Sponsors Section */
+.sponsor-header {
+  text-align: center;
+}
+.sponsor-logos {
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  grid-template-rows: repeat(1, 80px);
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
+}
+.sponsor-logo img {
+  filter: grayscale(100%);
+}
+/*------------------------------------
+ Main container end and footer start 
+ ----------------------------------*/
+.footer{
+    background-color: var(--off-white);
+    padding: 25px 0;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+ .footer p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
 }
